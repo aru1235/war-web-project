@@ -22,9 +22,9 @@ pipeline {
         }
 
 
-        stage ('Package Stage') {
+        stage ('build Stage') {
             steps {
-                    sh 'mvn package'
+                    sh 'mvn install'
                 
             }
         }
